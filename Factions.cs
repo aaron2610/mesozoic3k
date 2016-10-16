@@ -1,14 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CharInfo : MonoBehaviour {
+public class Factions : MonoBehaviour {
+	[Header("The Factions")]
+	public bool TheBrotherhoodInUse;
+	public bool DawnOfTruthInUse;
 
-	public int factionID;
 
 
 	// Use this for initialization
 	void Start () {
-
+	
 	}
 	
 	// Update is called once per frame
