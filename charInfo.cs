@@ -15,6 +15,7 @@ public class CharInfo : MonoBehaviour {
 	public float charStamina = 20 + clan_skill_bonus;
 	public float charFootSpeed = Random.Range(.9, 1.2);
 	public float charTotalDMG;
+	private float clan_skill_bonus;
 
 	string charDisplayName = charName + " of " + charFrom;
 
@@ -24,8 +25,8 @@ public class CharInfo : MonoBehaviour {
 		
 		maxHealth = Random.Range(80, 110);
 		health = maxHealth;
-		charTotalDMG = (charStr / 10 ) + weaponDMG;
-		charStr = Random.Range(20, 60) + clan_skill_bonus;
+		charStr = Random.Range(20, 60);  //Need to determine clan skill bonus
+		charTotalDMG = (charStr / 10 ) + clan_skill_bonus + weaponDMG;
 	
 		if (charNickname != null)
 		{
